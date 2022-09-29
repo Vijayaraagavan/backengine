@@ -1,0 +1,5 @@
+{
+    "PrivateKeyPath": "./auth/settings/keys/private_key",
+    "PublicKeyPath": "./auth/settings/keys/public_key_new",
+    "JWTExpirationDelta": 1
+}
