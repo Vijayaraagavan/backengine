@@ -6,8 +6,8 @@ import (
 	pg "github.com/go-pg/pg/v10"
 	orm "github.com/go-pg/pg/v10/orm"
 
-	models "backengine/models"
-	db "backengine/db"
+	models "github.com/Vijayaraagavan/backengine/models"
+	db "github.com/Vijayaraagavan/backengine/db"
 )
 
 func getModels(pgdb *pg.DB) []interface{} {

@@ -5,7 +5,7 @@ import (
 	"io"
 	"encoding/json"
 	"fmt"
-	"backengine/errs"
+	"github.com/Vijayaraagavan/backengine/errs"
 )
 
 func DefaultRouting(ctx *fiber.Ctx) error {

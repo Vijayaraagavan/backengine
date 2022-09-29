@@ -5,7 +5,7 @@ import (
 	"io/ioutil"
 	"fmt"
 
-	config "backengine/config"
+	config "github.com/Vijayaraagavan/backengine/config"
 )
 
 var environments = map[string]string{

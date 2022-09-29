@@ -1,4 +1,4 @@
-module backengine
+module github.com/Vijayaraagavan/backengine
 
 go 1.18
 

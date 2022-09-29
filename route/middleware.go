@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"time"
 	
-	// authentication "backengine/auth/core"
+	// authentication "github.com/Vijayaraagavan/backengine/auth/core"
 )
 
 type nakamaChecker struct {
