@@ -1,0 +1,19 @@
+{
+    "appName": "BACKENGINE",
+    "uri": {
+        "api": "http:127.0.0.1:8080/"
+    },
+    "port": 8086,
+    "env": "dev",
+    "version": "v1.0.0",
+    "database": {
+        "type": "POSTGRES",
+        "uri": "localhost:5433",
+        "name": "backengine",
+        "username": "postgres",
+        "password": "ard5050",
+        "timeout": 90,
+        "runScript": true
+    },
+    "sessionTimeout": 120000
+}
