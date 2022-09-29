@@ -4,13 +4,13 @@ import (
 	pg "github.com/go-pg/pg/v10"
 	// orm "github.com/go-pg/pg/v10/orm"
 	"sync"
-	config "backengine/config"
+	config "github.com/Vijayaraagavan/backengine/config"
 	"time"
 	// "context"
 	"log"
 	"os"
 	"fmt"
-	// "backengine/models"
+	// "github.com/Vijayaraagavan/backengine/models"
 )
 
 var (

@@ -2,7 +2,7 @@ package route
 
 import (
 	// "github.com/valyala/fasthttp"
-	controllers "backengine/controllers"
+	controllers "github.com/Vijayaraagavan/backengine/controllers"
 	fiber "github.com/gofiber/fiber/v2"
 	cors "github.com/gofiber/fiber/v2/middleware/cors"
 	// csrf "github.com/gofiber/fiber/v2/middleware/csrf"

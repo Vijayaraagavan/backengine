@@ -11,8 +11,8 @@ import (
 
 	jwt "github.com/dgrijalva/jwt-go"
 
-	"backengine/models"
-	"backengine/auth/settings"
+	"github.com/Vijayaraagavan/backengine/models"
+	"github.com/Vijayaraagavan/backengine/auth/settings"
 )
 
 type JWTAuthenticationBackend struct {

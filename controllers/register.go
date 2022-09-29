@@ -9,10 +9,10 @@ import (
 	"errors"
 	// "sync"
 
-	"backengine/models"
-	"backengine/util"
-	// "backengine/errs"
-	"backengine/db"
+	"github.com/Vijayaraagavan/backengine/models"
+	"github.com/Vijayaraagavan/backengine/util"
+	// "github.com/Vijayaraagavan/backengine/errs"
+	"github.com/Vijayaraagavan/backengine/db"
 )
 
 type register struct {

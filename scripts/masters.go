@@ -8,7 +8,7 @@ import (
 
 	pg "github.com/go-pg/pg/v10"
 
-	"backengine/models"
+	"github.com/Vijayaraagavan/backengine/models"
 )
 
 func initUsers(pgdb *pg.DB) {

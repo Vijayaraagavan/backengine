@@ -5,10 +5,10 @@ import(
 	fiber "github.com/gofiber/fiber/v2"
 	// pg "github.com/go-pg/pg/v10"
 	"errors"
-	"backengine/models"
-	"backengine/util"
-	"backengine/db"
-	"backengine/auth/core"
+	"github.com/Vijayaraagavan/backengine/models"
+	"github.com/Vijayaraagavan/backengine/util"
+	"github.com/Vijayaraagavan/backengine/db"
+	"github.com/Vijayaraagavan/backengine/auth/core"
 	"log"
 )
 
