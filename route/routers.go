@@ -31,7 +31,7 @@ func Routes() *(fiber.App) {
 	salePipe.Get("/user/:name", controllers.GetUser)
 	salePipe.Post("/user/login", controllers.Login)
 
-	var loginHandler = app.Group("/", LoginAuth)
+	var loginHandler = app.Group("/")
 	loginHandler.Get("/", controllers.Home)
 	// return func(ctx *fiber.Ctx) {
 	// 	switch(string(ctx.Path())) {

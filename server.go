@@ -13,6 +13,7 @@ import (
 	// "github.com/valyala/fasthttp"
 )
 
+// to run app -> 	go run server.go --config dev 
 func main() {
 	fmt.Println("success")
 	// fasthttp.ListenAndServe(":8086", route.Routes())

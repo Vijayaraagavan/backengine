@@ -4,7 +4,8 @@ import (
 	fiber "github.com/gofiber/fiber/v2"
 	"fmt"
 	"time"
-	authentication "backengine/auth/core"
+	
+	// authentication "backengine/auth/core"
 )
 
 type nakamaChecker struct {
@@ -41,19 +42,19 @@ func NakamaChecker(c *fiber.Ctx) error {
 	return c.Next()
 }
 
-func LoginAuth(c *fiber.Ctx) error {
-	headers := c.GetReqHeaders()
-	token := headers["Authorization"]
-	fmt.Println(token)
-	tokenbuf := new(bytes.Buffer)
-	io.Copy(tokenbuf, []byte(token))
-	tokenString := strings.TrimSpace(tokenbuf.String())
+// func LoginAuth(c *fiber.Ctx) error {
+// 	headers := c.GetReqHeaders()
+// 	token := headers["Authorization"]
+// 	fmt.Println(token)
+// 	tokenbuf := new(bytes.Buffer)
+// 	io.Copy(tokenbuf, []byte(token))
+// 	tokenString := strings.TrimSpace(tokenbuf.String())
 
-	token, err := jwt.ParseWithClaims(tokenString, &jwtValid{}, authentication.GetAuthMethod)
-	fmt.Println(token.Valid)
-	fmt.Printf("%+v", token)
-	return c.Next()
-}
+// 	token, err := jwt.ParseWithClaims(tokenString, &jwtValid{}, authentication.GetAuthMethod)
+// 	fmt.Println(token.Valid)
+// 	fmt.Printf("%+v", token)
+// 	return c.Next()
+// }
 
 func SetCookies(c *fiber.Ctx) error {
 	c.Cookie(&fiber.Cookie{

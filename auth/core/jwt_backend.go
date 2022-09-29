@@ -112,15 +112,15 @@ func getPublicKey() *rsa.PublicKey {
 	return rsaPub
 }
 
-func GetAuthMethod() jwt.Keyfunc {
-	backend := InitJWTAuthenticationBackend() 
-	signingKey, _ := json.Marshal(backend.PublicKey)
-	return func (token *jwt.Token) (interface{}, error) {
-		if _, ok := token.Method.(*jwt.SigningMethodHS256); !ok {
-			fmt.Println("Invalid token")
-			return nil, fmt.Error("unexpected signing method")
-		} else {
-			return signingKey, nil
-		}
-	}
-}
+// func GetAuthMethod() jwt.Keyfunc {
+// 	backend := InitJWTAuthenticationBackend() 
+// 	signingKey, _ := json.Marshal(backend.PublicKey)
+// 	return func (token *jwt.Token) (interface{}, error) {
+// 		if _, ok := token.Method.(jwt.SigningMethodHS256); !ok {
+// 			fmt.Println("Invalid token")
+// 			return nil, fmt.Error("unexpected signing method")
+// 		} else {
+// 			return signingKey, nil
+// 		}
+// 	}
+// }
